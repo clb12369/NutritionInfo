@@ -10,6 +10,7 @@ internal class Fields
     public double nf_total_fat { get; set; }
     public int nf_serving_size_qty { get; set; }
     public string nf_serving_size_unit { get; set; }
+
 }
 
 internal class Hit
@@ -19,6 +20,7 @@ internal class Hit
     public string _id { get; set; }
     public double _score { get; set; }
     public Fields fields { get; set; }
+
 }
 
 internal class Nutrition
@@ -26,4 +28,5 @@ internal class Nutrition
     public int total_hits { get; set; }
     public double max_score { get; set; }
     public List<Hit> hits { get; set; }
+
 }
